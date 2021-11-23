@@ -15,9 +15,10 @@ import { get } from 'lodash'
     axios.defaults.headers.Authorization = `Bearer ${response.data.token}`;
     history.push(payload.prevPath)
 
-
   }catch(e){
-    toast.error('E-mail ou senha inválidos!')
+    toast.error('E-mail ou senha inválidos!');
+
+    yield put(actions.loginFailure())
   }
 }
 

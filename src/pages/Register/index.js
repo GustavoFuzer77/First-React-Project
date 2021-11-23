@@ -35,8 +35,6 @@ export default function CadastroItens() {
     } catch (err) {
       console.log(err, 'deu erro')
     }
-
-
   }
 
   return (
