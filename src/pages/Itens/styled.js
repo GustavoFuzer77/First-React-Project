@@ -26,4 +26,5 @@ export const EditDel = styled.div`
     margin-left: 6px;
 
   }
+
 `;
